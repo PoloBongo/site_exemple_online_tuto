@@ -3,6 +3,7 @@ body, html {
     height: auto;
     margin: auto;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 #bg {
@@ -173,11 +174,12 @@ figcaption {
 
 .para_5 {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    flex-direction: row; 
+    align-items: center;
     font-size: 17px;
     font-weight: 500;
-    position: relative;
-    left: 47%;
 }
 
 .h2_contact {
@@ -273,17 +275,9 @@ img {
     left: 130px;
 }
 
-
 .btn:hover {
 	border: solid #00cfef;
 	color: #00cfef;
-}
-
-.bg3 {
-    position: relative;
-    left: 1200px;
-    bottom: 250px;
-    width: 700px;
 }
 
 #contact.div_trop_grande{
@@ -294,4 +288,11 @@ img {
 .bongo_copyright{
     position: relative;
     left: 900px;
+}
+
+.para_6 {
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    left: 77%;
 }
