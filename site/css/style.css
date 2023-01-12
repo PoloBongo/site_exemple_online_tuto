@@ -433,8 +433,9 @@ img {
         bottom: 920px;
     }
     ul.topnav {
+        justify-content: flex-end;
         position: relative;
-        bottom: 914px;
+        bottom: 915px!important;
         width: 100%;
     }
 }
@@ -765,16 +766,20 @@ img {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 900px) {
 
     ul.topnav li.right,
     ul.topnav li {
         float: none;
+        clear: both;
     }
 
     ul.topnav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: relative;
-        bottom: 914px;
+        bottom: 915px!important;
         width: 100%;
     }
 }
